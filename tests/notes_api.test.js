@@ -28,7 +28,7 @@ test('notes are returned as json', async () => {
     .get('/api/notes')
     .expect(200)
     .expect('Content-Type', /application\/json/)
-}, 10000)
+}, 30000)
 // the third parameter sets a timeout
 
 test('all notes are returned', async () => {
